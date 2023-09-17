@@ -1,0 +1,73 @@
+             +---------+                   +------------+
+             |  User   |                   | Wordle Game|
+             +---------+                   +------------+
+                 |                                 |
+                 | Start new game                  |
+                 |-------------------------------->|
+                 |                                 |
+                 | Make a guess                    |
+                 |-------------------------------->|
+                 |                                 |
+                 |     +-------+         +------+  |     +--------------+
+                 |     | Guess |         | Word |------->| WordleList   |
+                 |     |       |         |      |<-------|              |
+                 |     +-------+         +------+  |     +--------------+
+                 |         |                 |     |
+                 | Compare |                 |     |
+                 |         |<----------------|     |
+                 |         |                 |     |
+                 |         | Feedback        |     |
+                 |         |---------------> |     |
+                 |         |                 |     |
+                 |     +-----------+         |     |
+                 |     | Feedback  |<------- |     |
+                 |     +-----------+         |     |
+                 |         |                 |     |
+                 | Provide |                 |     |
+                 | feedback|<----------------|     |
+                 |         |                 |     |
+                 | Make another guess              |  
+                 |-------------------------------->|
+                 |                                 |
+                 |     +-------+         +------+  |
+                 |     | Guess |         | Word |  |
+                 |     +-------+         +------+  |
+                 |         |                 |     |
+                 | Compare |                 |     |
+                 |         |<----------------|     |
+                 |         |                 |     |
+                 |         | Feedback        |     |
+                 |         |---------------> |     |
+                 |         |                 |     |
+                 |     +-----------+         |     |
+                 |     | Feedback  |<------- |     |
+                 |     +-----------+         |     |
+                 |         |                 |     |
+                 | Provide |                 |     |
+                 | feedback|<----------------|     |
+                 |         |                 |     |
+                 |        ...               ...    |
+                 |   Continue                      |
+                 | End game                        |
+                 |-------------------------------->|
+                 |                                 |
+                 | Display final score             |
+                 | Ask if user wants to play again |
+                 |<--------------------------------|
+
+User        -> Wordle Game:      Starts a new game
+Wordle List -> WordList:         Selects a random secret word
+Wordle Game -> User:             Provides feedback on the number of letters in the secret word
+User        -> Wordle Game:      Makes a guess for the secret word
+Wordle Game -> Guess:            Stores the user's guess
+Wordle Game -> Feedback:         Compares the guess to the secret word and generates feedback
+Wordle Game -> User:             Provides feedback to the user
+User        -> Wordle Game:      Makes another guess
+Wordle Game -> Guess:            Stores the user's guess
+Wordle Game -> Feedback:         Compares the guess to the secret word and generates feedback
+Wordle Game -> User:             Provides feedback to the user
+
+               ... (repeat until user has correctly guessed the word or has used up all guesses)
+
+User        -> Wordle Game:      Ends the game
+Wordle Game -> User:             Displays the final score and asks if user wants to play again

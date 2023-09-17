@@ -1,0 +1,24 @@
+# TODO: Sprint 2 - Due April 10
+
+    1. (+5)       Sprint 2 exists with tasks assigned and updated to Done.          (Otabek)
+    2. (+5)       Complete the Users Stories and Tasks in Sprint 2                  (Otabek)
+    3. (+30)      Built and Test at least three classes that comprise the model
+                      a. Word.java                                                  (Tori)
+                      b. WordleList.java                                            (Tori)                                                                                           
+                      c. Account.java                                               (Cielo)                                                                                              
+                      d. ConsoleGame.java                                           (Elodie)                                                                                   
+    4, (+10)      Have at least 96% code coverage on the model (non GUI) classes.   (Otabek i can also help with this)
+                      a. WordTest.java                                              (Tori)                                                                                                        
+                      b. WordListTest.java                                          (Tori)                                                                                      
+                      c. AccountTest.java                                           (Cielo)                                                                                      
+                      d. ConsoleGameTest.java                                       (Elodie)                                                                             
+    5. (10)       Attend the meeting: Monday 5:40pm on Discord 
+
+
+#TODO: Sprint 3 - Due April 17
+
+   1. GuessGrid.java and Keyboard.java    (Tori)
+   2. LeaderBoard.java                    (Otabek)
+   3. LoginPane.java                      
+   4. AccountPane.java
+   5. Accessories.java

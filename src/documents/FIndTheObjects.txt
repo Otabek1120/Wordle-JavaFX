@@ -1,0 +1,33 @@
+Project: Wordle
+
+   Objects                          Responsiblity 
+1. MainGUI/Game   A class representing a single instance of the Wordle game. 
+                  This class might have properties such as the secret word, 
+                  the current player's guess, the number of guesses remaining, 
+                  and methods to start a new game, make a guess, end the game,
+                  save the game.
+
+2. Player/User    A class representing a player of the game. This class might 
+                  have properties such as the player's name and account details.
+                  
+3. Account        A class for a user's account. This class might have properties 
+                  such as user's email, full name, and password
+
+4. Word           A class representing a single five-letter word that can be used 
+                  as the secret word in the game. This class might have properties 
+                  such as the word itself, a method to determine if a guess matches 
+                  the word, and a method to provide feedback on the correctness of a guess.
+
+5. WordList       A class representing a collection of words that can be used in the game. 
+                  This class might have properties such as an array or ArrayList of Word 
+                  objects, methods to add or remove words from the list, and methods 
+                  to choose a random word from the list.
+
+6. Guess:         A class representing a player's guess for the secret word. This class 
+                  might have a property for the guess itself, and methods to compare the 
+                  guess to the secret word and provide feedback on the correctness of the guess.
+
+7. Feedback:      A class representing the feedback given to a player after making a 
+                  guess. This class might have properties such as the number of correct 
+                  letters in the guess, the number of correct letters in the correct position, 
+                  and a method to display the feedback as text.
